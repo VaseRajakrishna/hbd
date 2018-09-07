@@ -53,8 +53,9 @@ $('document').ready(function(){
 				x++;
 			if(x>17){
 				x=1;
-				$('.bannar').attr('src','rajini'+ x+'.jpg');
+				
 			}
+			$('.bannar').attr('src','rajini'+ x +'.jpg');
 			 //console.log($('.bannar').attr('src','rajini'+ x+'.jpg'));
 			},5000);
 		});
