@@ -46,8 +46,17 @@ $('document').ready(function(){
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
+			var x=0;
+			setInterval(function(){
+				x++;
+			if(x>17){
+				x=1;
+				$('.bannar').attr('src','rajini'+ x+'.jpg');
+			}
+			 //console.log($('.bannar').attr('src','rajini'+ x+'.jpg'));
+			},5000);
 		});
 	});
 
